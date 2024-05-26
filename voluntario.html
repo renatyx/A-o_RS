@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portal Solidário Vila Avaí</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/formulario.css">
+        <script src="js/verificacao.js"></script>
+    </head>
+    <body>
+        
+        <div class="main">
+            <div class="header">
+                
+            <h1>Portal Solidário Vila Avaí</h1>
+            <img src="img/sos_menu.png" alt="">
+            
+            <h3><a href="index.html">SoS Rio Grande do Sul</a></h3>
+            
+        
+        </div>
+        <div id="menu">
+                    <li> 
+                         <a href="voluntario.html">Quero ser voluntário
+                         </a>  
+                         </li>
+                    <li> 
+                         <a href="doar.html">Quero doar</a>   
+                        </li>
+                    <li>  
+                        <a href="chave_pix.html">Chave pix</a>
+                    </li>
+                 
+                </div>     
+                </ul>
+
+                <div id="form_box">
+                    <h2>Formlário de voluntário(a)</h2>
+    
+                        <p id="f_alert">
+                            Os campos não foram preenchidos corretamente!
+                        </p>
+    
+                    <form action="">
+                        <div class="f_line">
+                            <span>
+                                <label>Nome</label>
+                                <input type="text" id="i_1" required>
+                            </span>
+                            <span>
+                                <label>Sobrenome</label>
+                                <input type="text" id="i_2" required>
+                            </span>
+                        </div>
+    
+                        <div class="f_line">
+                            <span>
+                                <label>Data de Nascimento</label>
+                                <input type="date" id="i_3" required>
+                            </span>
+                            <span>
+                                <label>Cidade</label>
+                                <select>
+                                    <option>Indaiatuba</option>
+                                    <option>Salto</option>
+                                    <option>Campinas</option>
+                                    <option>Itu</option>
+                                </select>
+                            </span>
+                        </div>
+    
+                        <div class="f_line">
+                            <span>
+                                <label>Voluntário(a) para
+                                </label>
+    
+                                <select name="" id="i_4" required>
+                                    <option value="">Costura</option>
+                                    <option value="">Triagem</option>
+                                    <option value="">Higiênização</option>
+                                    <option value="">Transporte</option>
+                                    <option value="">Ponto de coleta</option>
+                                </select>
+                            </span>
+                        </div>
+    
+                        <div class="f_numero">
+                            <span>
+                                <label>Celular</label>
+                                <input type="number" id="i_numero" required>
+                            </span>
+                            
+                        </div>
+    
+                        <div class="f_line">
+                            <span>
+                                <input onclick="validacao()" type="submit" id="btt_form" value="cadastrar">
+                            </span>
+                        </div>
+                    </form>
+                </div>
+    
+            </div>
+            
+        </body>
+    </html>   

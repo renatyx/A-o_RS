@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portal Solidário Vila Avaí</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/formulario.css">
+        <script src="js/verificacao.js"></script>
+    </head>
+    <body>
+        
+        <div class="main">
+            <div class="header">
+                
+            <h1>Portal Solidário Vila Avaí</h1>
+            <img src="img/sos_menu.png" alt="">
+            
+            <h3><a href="index.html">SoS Rio Grande do Sul</a></h3>
+            
+        
+        </div>
+        <div id="menu">
+                    <li> 
+                         <a href="voluntario.html">Quero ser voluntário
+                         </a>  
+                         </li>
+                    <li> 
+                         <a href="doar.html">Quero doar</a>   
+                        </li>
+                    <li>  
+                        <a href="chave_pix.html">Chave pix</a>
+                    </li>
+                 
+                </div>     
+                </ul>
+
+                <div id="form_box">
+                    <h2>Formulário de doação</h2>
+    
+                        <p id="f_alert">
+                            Os campos não foram preenchidos corretamente!
+                        </p>
+    
+                    <form action="">
+                        <div class="f_line">
+                            <span>
+                                <label>Qual item deseja doar?</label>
+                                <input type="text" id="i_1" required>
+                            </span>
+                            <span>
+                                <label>Estado do item</label>
+                                <select name="" id="i_2" required>
+                                    <option value="">Novo</option>
+                                    <option value="">Usado</option>
+                                </select>
+
+                            </span>
+                        </div>
+    
+                        <div class="f_line">
+                            <span>
+                                <label for="">Foto do item</label>
+                                <input type="file" id="i_3" required>
+                            </span>
+                            <span>
+                                <label>Cidade</label>
+                                <select>
+                                    <option>Indaiatuba</option>
+                                    <option>Salto</option>
+                                    <option>Campinas</option>
+                                    <option>Itu</option>
+                                </select>
+                            </span>
+                        </div>
+    
+                        <div class="f_line">
+                            <span>
+                                <label>Selecione a coleta
+                                </label>
+    
+                                <select name="" id="i_4" required>
+                                    
+                                    <option value="">Irei deixar no ponto de coleta</option>
+                                    <option value="">Preciso de busquem</option>
+                                </select>
+                            </span>
+                            <span>
+                                <label for="">Endereço pra retirada</label>
+                                <input type="text">
+                            </span>
+                        </div>
+    
+                        <div class="f_numero">
+                            <span>
+                                <label>Celular</label>
+                                <input type="number" id="i_numero" required>
+                            </span>
+                            
+                        </div>
+                        <span>
+                            <label for="">
+                                Endereço ponto de coleta:
+                                Rua Colibri, 288 - Vila Avaí
+                            </label>
+                        </span>
+    
+                        <div class="f_line">
+                            <span>
+                                <input onclick="validacao()" type="submit" id="btt_form" value="cadastrar">
+                            </span>
+                        </div>
+                    </form>
+                </div>
+    
+            </div>
+            
+        </body>
+    </html>   
