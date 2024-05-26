@@ -1,0 +1,124 @@
+body{background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0%;
+    margin: 0%;
+    font-family: "Carter One", system-ui;
+    
+    }
+    
+    
+    :root{
+        --color_text: #fdfdfd;
+        --color_bg_text: #ffffff; 
+        --color_bg: #000000;
+        --color_text_nav: #2e54fc;
+    }
+    
+    
+    
+    a
+    {
+        color: var(--color_text_nav);
+        text-decoration: none;
+        
+    }
+        
+    a:hover
+    {
+        background-color: #fdfdfdbb;
+        transition: 0.5s;
+    }
+li{
+    list-style-type: none;
+    padding: 25px;
+}
+
+    
+    
+    .main {
+        margin: auto;
+        font-size: 20px;
+        width: 70%;
+        text-align: justify;
+        background-color: var(--color_bg);
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+        background-color: #000000;
+        color: var(--color_text);
+    }
+    .header h1{
+        text-transform: uppercase;
+    }
+       #menu{
+        display: flex;
+        justify-content: center;
+       }
+
+    .header img{
+        align-self: center;
+        width: 500px;
+        
+    
+    }
+
+    .banner{
+        display: flex;
+        justify-content: center;
+    }
+    .banner img{width: 500px;}
+    
+    .conteudo{display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin: auto;}
+    
+    
+    .box1{padding: 15px;
+        color: var(--color_text);}
+    
+    .pix {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .pix p{
+        text-align: center;
+    }
+    
+    
+    
+    
+    
+    
+        
+    
+    
+    @media screen and (max-width: 1024px){
+        .main{
+            width: 85%;
+            display: block;
+        }
+        
+    }
+    @media screen and (max-width: 450px){
+        .header img{
+            width: 300px;
+        }
+        
+        
+        .main{
+            width: auto;
+            font-size: 14px;
+        }
+        .conteudo{
+            flex-direction: column;
+        }
+    }
